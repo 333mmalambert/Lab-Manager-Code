@@ -1,7 +1,7 @@
 #############################################################
 # Effect Size Transformations and Standard Error Calculations
 # Author: Emma Lambert
-# Date: 2/4/2025
+# Date: 2/4/2026
 ##############################################################
 
 # Import Libraries
