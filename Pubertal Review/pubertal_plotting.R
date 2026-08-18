@@ -9,7 +9,7 @@ library(tidyverse)
 library(metaviz)
 
 # Define path
-pathway <- "/Users/eal200003/Downloads/"
+pathway <- "Insert Data Path Here"
 
 # Read in .csv
 firstsymp <- read_csv(paste0(pathway, "age_at_first_symptom.csv"))
@@ -17,7 +17,7 @@ sysreview <- read_csv(paste0(pathway, 'sys_review.csv'))
 firsthosp <- read_csv(paste0(pathway, "age_at_first_hospitalization.csv"))
 
 # Building numeric vector for viz_forest
-alldata <-as.matrix(sysreview[,c("z", "se")])
+alldata <- as.matrix(sysreview[,c("z", "se")])
 symp <- as.matrix(firstsymp[, c("z", "se")])
 symprisk <- as.matrix(firstsymp[, c("risk_effect")])
 hosp <- as.matrix(firsthosp[, c("z", "se")])
@@ -191,7 +191,7 @@ menarche_table <- data.frame(
 # Convert actual NA to character string "NA"
 mena_range[is.na(mena_range)] <- "NA"
 
-# Converting Menarche Range columns to a factor with defined leve;ls
+# Converting Menarche Range columns to a factor with defined levels
 mena_factor <- factor(mena_range, levels = c("11 to 14", "12 to 15", "10 to 14", "9 to 20", "10 to 15", "10 to 12", "9 to 12", "8 to 15", "10 to 17"))
 mena_levels <- levels(mena_factor)
 
