@@ -9,7 +9,7 @@ library(tidyverse)
 library(metaviz)
 
 # Define path
-pathway <- "/Users/eal200003/Downloads/"
+pathway <- "Insert Path Here"
 
 # Read in .csv
 ex_review <- read_csv(paste0(pathway, 'exercise_review.csv'))
