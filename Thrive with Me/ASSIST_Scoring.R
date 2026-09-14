@@ -8,10 +8,10 @@
 library(tidyverse)
 
 # Setting Working Directory
-setwd("~/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Damme, Katherine Steffen's files - ThriveWithMe/Phase 1 (18-25)/Data/Part 1/REDCap")
+setwd("Insert Path Here")
 
 # Reading in TWM Part 1 Data (This will need to be updated with each new data report)
-TWM_Data <- read_csv("ThriveWithMeScreener_DATA_2026-08-03_1007.csv")
+TWM_Data <- read_csv("ThriveWithMeDATA.csv")
 
 #################
 # Selecting Data
@@ -70,7 +70,7 @@ ASSIST_Clean <- ASSIST %>%
 #################
 
 # Pathway to Output folder
-setwd("~/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Damme, Katherine Steffen's files - ThriveWithMe/Phase 1 (18-25)/Data/Part 1/Scored Data/Output/Phase 2 Eligibility (ASSIST)")
+setwd("Insert Path Here")
 
 # Writing to .csv
 write_csv (ASSIST_Clean,'Phase2_Inclusion_Status.csv')
