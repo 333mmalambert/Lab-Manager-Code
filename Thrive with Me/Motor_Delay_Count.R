@@ -11,7 +11,7 @@ library(tidyverse)
 setwd("Insert Path Here")
 
 # Reading in TWM Part 1 Data (This will need to be updated with each new data report)
-TWM_Data <- read_csv("ThriveWithMeScreener_DATA_2026-09-11_1536.csv")
+TWM_Data <- read_csv("ThriveWithMeDATA.csv")
 
 ##############################################
 # Selecting and Cleaning Motor Delay Data
